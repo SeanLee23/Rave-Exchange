@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Home.css">
+
+  <title>Rave exchange</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Rave exchange</h1>
+    <!-- User profile picture and name -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Messages.html">Messages</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <h2>Upload a Photo or Video</h2>
+  <form id="uploadForm" enctype="multipart/form-data" method="post" action="/upload">
+      <label for="fileInput">Choose a Photo or Video:</label>
+      <input type="file" name="fileInput" id="fileInput" accept=".jpg, .jpeg, .png, .gif, .mp4, .avi, .mkv">
+      <button type="submit">Upload</button>
+  </form>
+
+  <main class="main-content">
+    <section class="feed">
+      <!-- Post cards -->
+    </section>
+
+    <aside class="profile-sidebar">
+      <!-- User profile information -->
+      <aside class="profile-sidebar">
+        <div class="profile-header">
+          <img src="path-to-profile-image.jpg" alt="User Profile Picture">
+          <h2>Username</h2>
+          <p>Bio goes here</p>
+        </div>
+        <div class="profile-stats">
+          <div class="stat">
+            <strong>Posts</strong>
+            <span>0</span>
+          </div>
+          <div class="stat">
+            <strong>Followers</strong>
+            <span>0</span>
+          </div>
+          <div class="stat">
+            <strong>Following</strong>
+            <span>0</span>
+          </div>
+        </div>
+      </aside>
+    </aside>
+  </main>
+
+  <script src="Home.js"></script>
+  <script src="Node.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2023 Rave exchange</p>
+  </footer>
+</body>
+</html>
